@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+@font-face{
+    src: url(../fontes/RobotoMono-Regular.ttf);
+    font-family: "roboto mono";
+}
+
+.center{
+    width: 100%;
+    margin: 0 auto;
+      
+}
+
+.head{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(52, 10, 87);
+}
+
+.head img{
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    margin: 20px 50px;
+}
+
+.banner{
+    width: 100%;
+    height: 450px;
+    background-image: url(../imagens/header_bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .center{
+    height: 100%;
+    
+}
+
+.form{
+    font-family: "roboto mono";
+    color: rgb(196, 192, 192);
+    padding: 20px 2%;
+    width: 420px;
+    height: calc(100% + 0px) ;
+    position: relative;
+    top: -15px;
+    background-color: rgb(56, 43, 65);
+    border: 10px solid rgb(148, 118, 177);
+    float: right;
+    border-color: rgba(177, 118, 174, 0.3);
+    background-clip: padding-box;
+    margin: 0px 1%;
+}
+
+.form h2{
+    font-weight: normal;
+    font-size: 20px;
+
+}
+
+.input{
+    margin-top: 20px;
+}
+
+.input span{
+    display: block;
+}
+
+.input input[type = text]{
+    /*border: 5px solid rgb(250, 10, 190);*/
+    width: 95%;
+    height: 35px;
+    padding: 0 2%;
+    border: 3px solid rgb(211, 208, 208);
+    margin-top: 4px;
+}
+
+.form p{
+    margin: 20px 0;
+}
+
+.input_submit{
+    height: 100%;
+    text-align: center;
+}
+
+.input_submit input[type = submit]{
+    border: 2px solid rgb(139, 60, 163);
+    width: 80%;
+    height: 70px;
+    background-color: rgb(101, 35, 163);
+    cursor: pointer;
+    color: rgb(255, 250, 250);
+    font-size: 24px;
+}
+
+.input_submit input[type = submit]:hover{
+    background-color: rgb(172, 82, 199);
+
+}
+
+.pri_info{
+    margin-top: 90px;
+    float: left;
+    background-color: rgba(21, 104, 96,0.4);
+    width: 450px;
+    height: 80%;
+    position: relative;
+    top: 20px;
+    left: 5%;
+}
+
+.pri_info ul{ 
+    list-style-position: inside;
+    padding: 20px;
+    
+}
+
+.pri_info ul li{
+    margin-bottom: 30px;
+    color: white; 
+    font-size: 18px;
+}
+
+.sessaoTexto{
+    width: 100%;
+    background-color: rgb(225, 184, 235);
+    padding: 70px 0px;
+    text-align: center;
+    
+}
+
+.sessaoTexto h2{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "roboto mono";
+    color: rgb(52, 54, 54);
+}
+
+.sessaoTexto p{
+    width: 70%;
+    display: inline-block;
+    text-align: justify;
+    font-family: "roboto mono";
+}
+
+.arrow{
+    width: 64px;
+    height: 64px;
+    background-image: url('../imagens/arrow.png');
+    position: relative;
+    top: 100px;
+    /*left: calc(50% - 32px);*/
+    text-align: center;
+    display: inline-block;
+}
+
+.sessaoFinal{
+
+    padding: 70px 15px;
+    font-family: "roboto mono";
+}
+
+.sessaoFinal > h2{
+    text-align: center;
+    color: rgb(48, 30, 53);
+
+}
+
+.sessaoImagens{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.singleimagem{
+    width: 25%;
+    display: inline-block;
+    color: rgb(48, 30, 53);
+
+}
+
+.singleimagem p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer{
+    border-top: 4px solid rgb(100, 98, 98);
+    padding: 40px 0px;
+    color: rgb(58, 53, 53);
+    text-align: center;
+    font-family: "roboto mono";
+}
+
+
+@media screen and (max-width: 1015px){
+
+    .head{
+        text-align: center;
+       
+    }
+
+    .banner{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .banner .center .pri_info{
+         text-align: left;
+    }
+
+    .form{
+        width: 70%;
+        text-align: left;
+        float: none;
+        display: inline-block;
+        position: relative;
+    }
+
+    .pri_info{
+        width: 70%;
+        float: none;
+        display: inline-block;
+        position: initial;
+        margin-bottom: 50px;
+    }
+
+    .sessaoFinal{
+        margin-top: 0 auto;
+    }
+
+    .singleimagem{
+        width: 40%;
+        margin:20px 1%;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .singleimagem{
+        width: 80%;
+        margin:20px 1%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .singleimagem p{
+        text-align: justify;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
